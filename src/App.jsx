@@ -1,8 +1,14 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+import IndexHome from "./components/01 - Home/IndexHome";
 
 const App = () => {
   return (
-    <div className="w-96 border border-blue-500 text-center text-4xl">App</div>
+    <div className="">
+      <Routes>
+        <Route path="/" element={<IndexHome />} />
+      </Routes>
+    </div>
   );
 };
 
