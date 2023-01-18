@@ -7,7 +7,7 @@ const LoginBtn = () => {
     let login = document.querySelector("#user").value;
     let senha = document.querySelector("#senha").value;
     login === "admin" && senha === "123"
-      ? navigate("escolha")
+      ? navigate("/escolha")
       : alert("Usuário ou login incorreto (toast)");
     console.log(login, senha);
   }
@@ -48,7 +48,7 @@ const LoginBtn = () => {
               Entrar
             </button>
             <button
-              onClick={() => navigate("cadastro")}
+              onClick={() => navigate("/cadastro")}
               className="btn bg-[#00111c]"
             >
               Cadastra-se

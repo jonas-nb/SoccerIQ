@@ -4,7 +4,10 @@ const SignBtn = () => {
   const navigate = useNavigate();
 
   return (
-    <div onClick={navigate("cadastro")} className="btn btn-sm btn-secondary">
+    <div
+      onClick={() => navigate("/cadastro")}
+      className="btn btn-sm btn-secondary"
+    >
       Sign In
     </div>
   );
