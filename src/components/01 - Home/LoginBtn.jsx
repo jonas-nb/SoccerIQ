@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 const LoginBtn = () => {
   const navigate = useNavigate();
 
-  function isLog() {
+  function isLog(event) {
+    event.preventDefault();
     let login = document.querySelector("#user").value;
     let senha = document.querySelector("#senha").value;
     login === "admin" && senha === "123"
